@@ -17,33 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-xM-UOA">
-                                <rect key="frame" x="159" y="394.66666666666669" width="75" height="62.666666666666686"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-xM-UOA">
+                                <rect key="frame" x="16" y="340.66666666666663" width="361" height="170.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dii-VC-Lal">
-                                        <rect key="frame" x="17.000000000000004" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                        <rect key="frame" x="160" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-V0-k8N">
-                                        <rect key="frame" x="0.0" y="28.333333333333318" width="75" height="34.333333333333343"/>
+                                        <rect key="frame" x="143" y="28.333333333333318" width="75" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
                                             <action selector="cartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMX-AB-eHd"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HI9-Mn-foP" customClass="PrimaryButton" customModule="Common">
+                                        <rect key="frame" x="0.0" y="70.666666666666629" width="361" height="100"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="A8Y-xM-UOA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Dj-Ir-5jv"/>
-                            <constraint firstItem="A8Y-xM-UOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmW-0v-wt7"/>
+                            <constraint firstItem="A8Y-xM-UOA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9SH-hM-BbS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A8Y-xM-UOA" secondAttribute="trailing" constant="16" id="Ust-mQ-vbi"/>
+                            <constraint firstItem="A8Y-xM-UOA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ahx-Be-TEw"/>
+                            <constraint firstItem="A8Y-xM-UOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMv-pS-HLt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="primaryButton" destination="HI9-Mn-foP" id="Prz-3c-EjH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

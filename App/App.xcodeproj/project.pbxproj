@@ -17,6 +17,8 @@
 		ADA1FB292D2D02E500485E31 /* Cart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADA1FB272D2D02E500485E31 /* Cart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADA1FB2D2D2D02F600485E31 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1FB2C2D2D02F600485E31 /* MainCoordinator.swift */; };
 		ADA1FB342D2D059A00485E31 /* CartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1FB332D2D059A00485E31 /* CartCoordinator.swift */; };
+		ADA1FB502D2D10D000485E31 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA1FB4F2D2D10D000485E31 /* Common.framework */; };
+		ADA1FB512D2D10D000485E31 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADA1FB4F2D2D10D000485E31 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				ADA1FB292D2D02E500485E31 /* Cart.framework in Embed Frameworks */,
+				ADA1FB512D2D10D000485E31 /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +48,7 @@
 		ADA1FB272D2D02E500485E31 /* Cart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA1FB2C2D2D02F600485E31 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		ADA1FB332D2D059A00485E31 /* CartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCoordinator.swift; sourceTree = "<group>"; };
+		ADA1FB4F2D2D10D000485E31 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA1FB282D2D02E500485E31 /* Cart.framework in Frameworks */,
+				ADA1FB502D2D10D000485E31 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,7 @@
 		ADA1FB262D2D02E500485E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADA1FB4F2D2D10D000485E31 /* Common.framework */,
 				ADA1FB272D2D02E500485E31 /* Cart.framework */,
 			);
 			name = Frameworks;

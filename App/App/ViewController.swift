@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Common
 
 protocol ViewControllerCoordinatorDelegate: AnyObject {
   func cart(name: String)
@@ -13,9 +14,17 @@ protocol ViewControllerCoordinatorDelegate: AnyObject {
 
 class ViewController: UIViewController {
   public weak var viewControllerCoordinatorDelegate: ViewControllerCoordinatorDelegate?
-
+ 
+  @IBOutlet weak var primaryButton: PrimaryButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    primaryButton.setTitle(title: "Primary Button")
+
+    primaryButton.onTap {
+      
+    }
   }
   
   @IBAction func cartButtonTapped(_ sender: Any) {
